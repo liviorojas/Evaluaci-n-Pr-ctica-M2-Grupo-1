@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoLimpio</title>
+    <link rel="icon" href="Assets/img/Icon2.jfif" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <meta name="description" content="Auto limpio CARWASH" />
+    <meta name="keywords" content="Lavado, Auto, Auto Limpio, Auto Lavado" />
+    <meta name="author" content="Grupo 1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Assets/styles/AutoStyleG1.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+<style>
+    .mensajeError {
+        color: red;
+        font-size: 12px;
+    }
+    .inputError {
+        border-color: red;
+    }
+</style>
+</head>
+<body>
+    <header class="container-fluid">
+        <h1 class="display-4">"AUTO LIMPIO CARWASH"</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#qs">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#ns">Nuestros Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#nc">Nuestro Compromiso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#ah">Agenda tu Hora</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br/>
+    <section class="container">
+        <div class="row">
+            <h3 id="qs">Quiénes Somos.</h3>
+            <p>"Una empresa que presta servicios de lavado de autos en el centro de la ciudad. Trabajamos en estrecha colaboración con nuestros clientes para ofrecerles un servicio personalizado de acuerdo a sus necesidades y circunstancias individuales. Póngase en contacto con nosotros hoy mismo para hablar con nuestro equipo".</p>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <h3 id="ns">Nuestros Servicios.</h3>
+            <p>Brindamos el mejor lavado exterior y limpieza detallada del motor, le garantizamos que se irá feliz con su auto como nuevo. Productos utilizados son renovador de gomas, liquido limpia vidrios, desengrasante, shampoo con abrillantador y silicona emulsionada.</p>
+            <p>Pronto también disponible lavado interior y restauración de tapices!</p>
+            <br/>
+            <br/>
+            <div class="col-12 col-md-12" id="auto-slider">
+                <ul class="slider">
+                    <li id="slide1">
+                        <img src="Assets/img/Imagen1.jpg"/>
+                    </li>
+                    <li id="slide2">
+                        <img src="Assets/img/Imagen2.jpg"/>
+                    </li>
+                    <li id="slide3">
+                        <img src="Assets/img/Imagen 3.jpg"/>
+                    </li>
+                    <li id="slide4">
+                        <img src="Assets/img/Imagen4.jpg"/>
+                    </li>
+                    <li id="slide5">
+                        <img src="Assets/img/Imagen 5.jpg"/>
+                    </li>
+                    <li id="slide6">
+                        <img src="Assets/img/Imagen6.jpg"/>
+                    </li>
+                    <li id="slide7">
+                        <img src="Assets/img/Imagen7.jpg"/>
+                    </li>
+                    <li id="slide8">
+                        <img src="Assets/img/Imagen8.jpg"/>
+                    </li>
+                    <li id="slide9">
+                        <img src="Assets/img/Imagen9.jpg"/>
+                    </li>
+                </ul>
+                
+                <ul class="menu">
+                  <li>
+                    <a href="#slide1"></a>
+                  </li>
+                  <li>
+                    <a href="#slide2"></a>
+                  </li>
+                   <li>
+                    <a href="#slide3"></a>
+                  </li>
+                  <li>
+                    <a href="#slide4"></a>
+                  </li>
+                  <li>
+                    <a href="#slide5"></a>
+                  </li>
+                   <li>
+                    <a href="#slide6"></a>
+                  </li>
+                  <li>
+                    <a href="#slide7"></a>
+                  </li>
+                  <li>
+                    <a href="#slide8"></a>
+                  </li>
+                   <li>
+                    <a href="#slide9"></a>
+                  </li>
+                </ul>
+            </div>
+                <br>
+            <div class="row">
+                <ul>
+                    <li ><b>Lavado exterior:</b> </li>
+                        <p>Realizado con hidrolavadora para sacar partículas que puedan rayar su vehículo, utilizamos un shampoo de última generación que entrega una pelicula de cera que protege y da un brillo intenso, además incluimos renovador de gomas y limpieza de vidrios para dar un aspecto de auto nuevo.</p>
+                    <li><b>Lavado de motor: </b> </li>
+                        <p>Se limpian todas las piezas que están a la vista al abrir el capot de tu auto, utilizando desengrasantes y vapor para no dañar con agua el circuito eléctrico.</p>
+                    </ul>
+            </div>
+        </div>    
+    </section>
+    <section class="container">
+        <div class="row">
+            <h3 id="nc">Nuestro Compromiso.</h3>
+            <p>"Estimado cliente, le garantizamos la mejor atención para usted y cuidado para su vehículo, nuestro equipo de profesionales, así como la tecnología de nuestros equipos y calidad de insumos, le brinda la tranquilidad de un servicio excelente que lo dejará satisfecho con nuestro trabajo. Su auto realmente lucirá como nuevo."</p>
+        </div>
+    </section>
+    <br/>
+    <section class="container-fluid">
+        <div class="row">
+        <h3 id="ah">Agenda tu hora.</h3>
+        <br/>
+        <br/>
+        <br/>
+        <form id="formularioRegistro" method="get" name="formularioRegistro">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="form-group" name="padre">
+                        <h5>Registre sus datos:</h5>
+                        <br/>
+                        <label class="form-label" for="rut">RUT:</label>
+                        <div class="rut input-group">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+                                <input type="text" class="form-control" id="rut" name="rut" placeholder="12.345.678" title="Ingrese su RUT"
+                                onchange="onLimpiarEstilos('rut')"/>
+                                <div id="errorRut" class="mensajeError"></div>
+                            </div>    
+                            <span class="input-group-addon">&nbsp-&nbsp</span>
+                            <div class="col-1 col-sm-2 col-md-2 col-lg-1">
+                                <input type="text" class="form-control" id="dv" name="dv" title="Ingrese su dígito verificador"
+                                onchange="onLimpiarEstilos('dv')"/>
+                                <div id="errorDv" class="mensajeError"></div>
+                            </div>      
+                        </div>
+                        <br />
+                        <label class="form-check-label" for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ejemplo: Andrés" title="Ingrese su nombre"
+                        onchange="onLimpiarEstilos('nombre')" />
+                        <div id="errorNombre" class="mensajeError"></div>
+                        <br />
+                        <label class="form-check-label" for="apellido">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ejemplo: González" title="Ingrese su apellido"
+                        onchange="onLimpiarEstilos('apellido')"  />
+                        <div id="errorApellido" class="mensajeError"></div>
+                        <br />
+                        <label class="form-check-label" for="direccion">Dirección:</label>
+                        <input type="text" class="form-control" id="direccion" name="direccion"  placeholder="Las Acacias N°22, departamento N°6" title="Ingrese su dirección"
+                        onchange="onLimpiarEstilos('direccion')"/>
+                        <div id="errorDireccion" class="mensajeError"></div>
+                        <br />
+                        <label class="form-label" for="comuna">Comuna:</label>
+                        <select class="form-control" name="comuna" >
+                            <option value="1">Temuco</option>
+                            <option value="2">Freire</option>
+                            <option value="3">Lautaro</option>
+                            <option value="4">Padre las Casas</option>
+                            <option value="5">Pitrufquén</option>
+                        </select>
+                        <br />   
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-group">
+                        <h5>Ingrese los datos de su vehículo:</h5>
+                        <br/>
+                        <label class="form-check-label" for="tipoVehiculo">Tipo de vehículo:</label>
+                        <select class="form-control" name="tipoVehiculo" >
+                            <option value="1">Automóvil</option>
+                            <option value="2">Camión</option>
+                            <option value="3">Camioneta</option>
+                            <option value="4">Furgón</option>
+                            <option value="5">Moto</option>
+                        </select>
+                        <br />
+                        <label class="form-check-label" for="marca">Marca:</label>
+                        <input type="text" class="form-control" id="marca" name="marca" placeholder="Ejemplo: Subaru, Honda, etc."
+                        title="Ingrese la marca de su vehículo" onchange="onLimpiarEstilos('marca')"/>
+                        <div id="errorMarca" class="mensajeError"></div>
+                        <br />
+                        <label class="form-check-label" for="modelo">Modelo:</label>
+                        <input type="text" class="form-control" id="modelo" name="modelo" placeholder="Ejemplo: WRX STI" title="Modelo del vehículo"
+                        onchange="onLimpiarEstilos('modelo')"/>
+                        <div id="errorModelo" class="mensajeError"></div>
+                        <br />
+                        <label class="form-check-label" for="ano">Año:</label>
+                            <input type="number" class="form-control" id="ano" name="ano" min="1950" max="2022" placeholder="Sólo dígitos" title="Ingrese año del vehículo"
+                            onchange="onLimpiarEstilos('ano')"/>
+                            <div id="errorAno" class="mensajeError"></div>
+                        <br />
+                    </div>
+                    <div class="form-check-label"></div>
+                            <label class="form-check-label">¿Revisión Técnica al día?:</label>
+                            Sí <input type="radio" class="form-check-input" name="Revisión Técnica" value="Sí" checked/>
+                            No <input type="radio" class="form-check-input" name="Revisión Técnica" value="No" />
+                    </div>
+                </div>
+                <br/>
+                <div class="col-12 col-md-6">
+                    <div class="form-group">
+                        <h5>Seleccione Servicios a realizar:</h5>
+                        <div class="form-check">
+                            <label class="form-check-label"> <b>Servicios disponibles:</b></label>
+                            <br/>
+                            <input type="checkbox" class="form-check-input" value="7.000"
+                            name="servicios"><span>Lavado Exterior valor $7.000.-</span><br />
+                            <input type="checkbox" class="form-check-input" value="5.000"
+                            name="servicios"><span>Lavado de Motor valor $5.000.-</span><br />
+                    </div>
+                    <br/>
+                    <label class="form-check-label" for="encargado"> <b>Seleccione a su especialista:</b> </label>
+                    <br/>
+                        <select class="form-control" name="encargado" >
+                            <option value="1">Christian Coloma</option>
+                            <option value="2">Diego Padilla</option>
+                            <option value="3">Eduardo Espinoza</option>
+                            <option value="4">Javier lópez</option>
+                            <option value="5">Livio Rojas</option>
+                        </select>
+                </div>
+                <br/>
+                <div class="col-12 col-md-6">
+                    <h5>Ingrese Fecha y hora:</h5>
+                        <label class="form-check-label"> <b>Selecione fecha:</b></label>
+                    <br/>
+                        <input class="form-control" type="date" >
+                        <br/>
+                        <label class="form-check-label"> <b>Selecione hora:</b></label>
+                        <br/>
+                        <input class="form-control" type="time" >
+                        <br />    
+                    <br/>
+                </div>
+                <div class="container-fluid">
+                    <form method="get" class="p-4 shadow bg-white">
+                     
+                            <div class="col-12 col-md-6">
+                                    <h6>Costo de Nuestro Servicio:</h6>
+                                    <br>
+                                    <label class="form-check-label" for="primero">Lavado Exterior valor sin Iva $</label>
+                                    <br>
+                                    <input class="form-control" type="number" id="primero" name="primero" onchange="onLimpiarInput('primero')" />
+                               
+                                <div id="errorPrimero" class="text fs-6 text-danger"></div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="segundo">Lavado de Motor valor sin Iva $</label>
+                                    <br>
+                                    <input class="form-control" type="number" id="segundo" name="segundo" onchange="onLimpiarInput('segundo')"/>
+                                </div>
+                                <div id="errorSegundo" class="text fs-6 text-danger"></div>
+                            </div>
+                    </form>
+                      
+                        <div class="botonera m-4">
+                            <div class="row">
+                                <div class="col-12 col-md-6" >
+                                    <button type="button" class="btn btn-primary btn-lg" onclick="onSumar()">Total con Iva</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            <div class="botonera m-4">
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <button type="submit" class="btn btn-primary btn-lg" name="btnEnviar"> Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script>
+            $(function () {
+
+                $('#formularioRegistro').submit(function (evento) {
+            
+                    // Funciones que se van a utilizar
+                    
+                    function validarDvLetraK(parametro) {
+                        var patron = /^[kK\s]*$/;
+                        if (parametro.search(patron)) {
+                            return false;
+                        } else {
+                            return true;
+                        }
+                    }
+            
+                    function validarTexto(parametro) {
+                        var patron = /^[a-zA-Z\s]*$/;
+                        if (parametro.search(patron)) {
+                            return false;
+                        } else {
+                            return true;
+                        }
+                    }
+            
+                    function validarNumerosLetrasEspacios(parametro) {
+                        var patron = /^[A-Za-z0-9\s]+$/g;
+                        if (parametro.search(patron)) {
+                            return false;
+                        } else {
+                            return true;
+                        }
+                    }
+            
+                    // Creacion de las variables
+            
+                    const elementoRut = $('#rut');
+                    const valorRut = elementoRut.val();
+            
+                    const elementoDv = $('#dv');
+                    const valorDv = elementoDv.val();
+            
+                    const elementoNombre = $('#nombre');
+                    const valorNombre = elementoNombre.val();
+            
+                    const elementoApellido = $('#apellido');
+                    const valorApellido = elementoApellido.val();
+            
+                    const errorDireccion = $('#direccion');
+                    const valorDireccion = errorDireccion.val();
+            
+                    const elementoMarca = $('#marca');
+                    const valorMarca = elementoMarca.val();
+            
+                    const elementoModelo = $('#modelo');
+                    const valorModelo = elementoModelo.val();
+            
+                    const elementoAno = $('#ano');
+                    const valorAno = elementoAno.val();
+            
+                    const elementoServicios = $("input[name='servicios']");
+                    const valorServicios = $("input[type='checkbox']:checked").length;
+            
+                    // Validaciones para cada input del formulario
+            
+                    if (valorRut == null || valorRut == '') {
+                        evento.preventDefault();
+                        $("#errorRut").text("Ingrese su Rut");
+                        elementoRut.addClass("inputError");
+                    } else if (isNaN(valorRut)) {
+                        evento.preventDefault();
+                        $("#errorRut").text("El Rut ingresado no es valido");
+                        elementoRut.addClass("inputError");
+                    } else if (valorRut.length != 8) {
+                        evento.preventDefault();
+                        $("#errorRut").text("El Rut ingresado tiene que tener 8 digitos");
+                        elementoRut.addClass("inputError");
+                    }
+            
+                    if (valorDv == null || valorDv == '') {
+                        evento.preventDefault();
+                        $("#errorDv").text("Ingrese el digito verificador");
+                        elementoDv.addClass("inputError");
+                    } else if (isNaN(valorDv) && validarDvLetraK(valorDv) == false) {
+                        evento.preventDefault();
+                        $("#errorDv").text("El digito verificador solo puede ser numeros o letra K");
+                        elementoDv.addClass("inputError");
+                    } else if (valorDv.length != 1) {
+                        evento.preventDefault();
+                        $("#errorDv").text("El digito verificador solo tiene 1 digito");
+                        elementoDv.addClass("inputError");
+                    }
+            
+                    if (valorNombre == null || valorNombre == '') {
+                        evento.preventDefault();
+                        $('#errorNombre').text("Ingrese su nombre");
+                        elementoNombre.addClass("inputError");
+                        // $("#nombre").focus(function(){
+                        //     $(this).css("background-color", "#FFFFCC");
+                        // });
+                    } else if (valorNombre.length > 30) {
+                        evento.preventDefault();
+                        $('#errorNombre').text("Nombre debe tener maximo 30 digitos");
+                        elementoNombre.addClass("inputError");
+                    } else if (validarTexto(valorNombre) == false) {
+                        evento.preventDefault();
+                        $('#errorNombre').text("Por favor ingresar solo letras");
+                        elementoNombre.addClass("inputError");
+                    }             
+            
+                    if (valorApellido == null || valorApellido == '') {
+                        evento.preventDefault();
+                        $('#errorApellido').text("Ingrese su apellido");
+                        elementoApellido.addClass("inputError");
+                    } else if (valorApellido.length > 30) {
+                        evento.preventDefault();
+                        $('#errorApellido').text("Apellido debe tener maximo 30 digitos");
+                        elementoApellido.addClass("inputError");
+                    } else if (validarTexto(valorApellido) == false) {
+                        evento.preventDefault();
+                        $('#errorApellido').text("Por favor ingresar solo letras");
+                        elementoApellido.addClass("inputError");
+                    }
+            
+                    if (valorDireccion == null || valorDireccion == '') {
+                        evento.preventDefault();
+                        $('#errorDomicilio').text("Ingrese su direccion");
+                        errorDireccion.addClass("inputError");
+                    } else if (valorDireccion.length > 80) {
+                        evento.preventDefault();
+                        $('#errorDomicilio').text("Direccion debe tener maximo 80 digitos");
+                        errorDireccion.addClass("inputError");
+                    }
+                    else if (validarNumerosLetrasEspacios(valorDireccion) == false) {
+                        evento.preventDefault();
+                        $('#errorDomicilio').text("Direccion ingresada invalida, por favor ingresar solo letras, numeros y espacios");
+                        errorDireccion.addClass("inputError");
+                    }
+            
+                    if (valorMarca == null || valorMarca == '') {
+                        evento.preventDefault();
+                        $('#errorMarca').text("Ingrese la marca de su vehiculo");
+                        elementoMarca.addClass("inputError");
+                    } else if (valorMarca.length > 20) {
+                        evento.preventDefault();
+                        $('#errorMarca').text("Marca debe tener maximo 20 digitos");
+                        elementoMarca.addClass("inputError");
+                    } else if (validarTexto(valorMarca) == false) {
+                        evento.preventDefault();
+                        $('#errorMarca').text("Por favor ingresar solo letras");
+                        elementoMarca.addClass("inputError");
+                    }
+            
+                    if (valorModelo == null || valorModelo == '') {
+                        evento.preventDefault();
+                        $('#errorModelo').text("Ingrese el modelo de su vehiculo");
+                        elementoModelo.addClass("inputError");
+                    } else if (valorModelo.length > 20) {
+                        evento.preventDefault();
+                        $('#errorModelo').text("Modelo debe tener maximo 20 digitos");
+                        elementoModelo.addClass("inputError");
+                    } else if (validarTexto(valorModelo) == false) {
+                        evento.preventDefault();
+                        $('#errorModelo').text("Por favor ingresar solo letras");
+                        elementoModelo.addClass("inputError");
+                    }
+            
+                    if (valorAno == null || valorAno == '') {
+                        evento.preventDefault();
+                        $('#errorAno').text("Ingrese el Año del vehiculo");
+                        elementoAno.addClass("inputError");
+                    } else if (isNaN(valorAno)) {
+                        evento.preventDefault();
+                        $('#errorAno').text("Debe ingresar un numero");
+                        elementoAno.addClass("inputError");
+                    } else if (valorAno.length != 4) {
+                        evento.preventDefault();
+                        $('#errorAno').text("Ingrese un año valido, Ej: 2020");
+                        elementoAno.addClass("inputError");
+                    }
+            
+                    if (valorServicios == 0) {
+                        evento.preventDefault();
+                        $('#errorServicios').text("Seleccione una opcion");
+                        elementoServicios.addClass("inputError");
+                    }
+            
+                    $('input, textarea').change(function () {
+                        $(this).removeClass("inputError");       // remueve la clase border danger del elemento
+                        const padre = $(this).parent();             // encuentra al elemento padre del elemento original
+                        padre.children('div.mensajeError').text("");    // busca hijos con las caracteristicas pedidas, con el hijo encontrado, setea su texto en nada
+                    });
+            
+                    // Validaciones para enviar los datos del formulario
+            
+                    if (valorRut != '' && valorRut.length == 8 && !isNaN(valorRut) && valorDv != '' && valorDv.length == 1 && (!isNaN(valorDv) || validarDvLetraK(valorDv) == true) && valorNombre.length > 0 && valorNombre.length < 31 && validarTexto(valorNombre) == true && valorApellido.length > 0 && valorApellido.length < 31 && validarTexto(valorApellido) == true && valorDireccion.length > 0 && valorDireccion.length < 81 && validarNumerosLetrasEspacios(valorDireccion) == true && valorMarca.length > 0 && valorMarca.length < 21 && validarTexto(valorMarca) == true && valorModelo.length > 0 && valorModelo.length < 21 && validarTexto(valorModelo) == true && valorAno != '' && valorAno.length == 4 && !isNaN(valorAno) && valorServicios > 0) {
+                        alert("Datos enviados");
+                    } else {
+                        alert("Tiene errores en el formulario!");
+                    }
+                });
+            });
+        </script>
+    </section>
+</body>
+<br/>
+<footer class="container-fluid bg-dark text-white">
+    <div class="col-12 col-md-12">
+        <p >Evaluación Práctica M2</p>
+        <p>Desarrollado por Grupo 1</p>
+    </div>
+</footer>  
+</html>
